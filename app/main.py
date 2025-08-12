@@ -7,7 +7,7 @@ from .dependencies import get_db
 
 models.Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="My Sena CRUD")
+app = FastAPI(title="My Sena CRUD", version="1.0.0" )
 
 @app.get("/", include_in_schema=False)
 def root():
